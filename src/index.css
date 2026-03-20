@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .bg-gradient-dark-purple {
+    background: linear-gradient(135deg, #16062B 0%, #320E5E 30%, #623E98 65%, #9B75C9 100%);
+  }
+
+  .bg-gradient-light-purple {
+    background: linear-gradient(135deg, #9B75C9, #CBB6E6, #F3EBFB);
+  }
+
+  .shadow-purple-glow {
+    box-shadow: 0 0 20px rgba(155, 117, 201, 0.6);
+  }
+
+  .text-gradient-light {
+    background: linear-gradient(135deg, #9B75C9, #CBB6E6, #F3EBFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

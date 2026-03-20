@@ -28,9 +28,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-[#0b0f19] text-gray-300">
+    <div className="bg-[#16062B] text-gray-300">
       {/* Hero Banner */}
-      <section className="bg-gradient-to-r from-[#6b84ec] to-[#79c7fd] text-white py-24">
+      <section className="bg-gradient-dark-purple text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -51,21 +51,21 @@ export default function Contact() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-[#131b2f]">
+      <section className="py-24 bg-[#320E5E]/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             {/* Contact Info */}
             <div>
               <h2 className="text-4xl font-bold text-white mb-6">Get in Touch</h2>
-              <div className="w-20 h-1 bg-[#79c7fd] mb-8 rounded-full"></div>
+              <div className="w-20 h-1 bg-[#CBB6E6] mb-8 rounded-full"></div>
               <p className="text-lg text-gray-400 mb-12 leading-relaxed">
                 Whether you need a customized ERP solution, an AI-powered LMS, or complete digital marketing services, our team is ready to help you transform your business.
               </p>
 
               <div className="space-y-8">
                 <div className="flex items-start">
-                  <div className="bg-[#0b0f19] border border-white/5 p-4 rounded-full text-[#6b84ec] mr-6">
+                  <div className="bg-[#16062B] border border-white/5 p-4 rounded-full text-[#9B75C9] mr-6">
                     <MapPin size={24} />
                   </div>
                   <div>
@@ -74,7 +74,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-[#0b0f19] border border-white/5 p-4 rounded-full text-[#6b84ec] mr-6">
+                  <div className="bg-[#16062B] border border-white/5 p-4 rounded-full text-[#9B75C9] mr-6">
                     <Phone size={24} />
                   </div>
                   <div>
@@ -83,7 +83,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-[#0b0f19] border border-white/5 p-4 rounded-full text-[#6b84ec] mr-6">
+                  <div className="bg-[#16062B] border border-white/5 p-4 rounded-full text-[#9B75C9] mr-6">
                     <Mail size={24} />
                   </div>
                   <div>
@@ -95,7 +95,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-[#131b2f] rounded-3xl p-10 shadow-xl border border-white/5">
+            <div className="bg-[#320E5E]/40 rounded-3xl p-10 shadow-xl border border-white/5">
               <h3 className="text-2xl font-bold text-white mb-8">Request a Free Demo / Consultation</h3>
               
               {isSubmitted ? (
@@ -120,7 +120,7 @@ export default function Contact() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0b0f19] text-white focus:ring-2 focus:ring-[#6b84ec] focus:border-transparent outline-none transition-all" 
+                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#16062B] text-white focus:ring-2 focus:ring-[#9B75C9] focus:border-transparent outline-none transition-all" 
                         placeholder="John Doe" 
                       />
                     </div>
@@ -133,7 +133,7 @@ export default function Contact() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0b0f19] text-white focus:ring-2 focus:ring-[#6b84ec] focus:border-transparent outline-none transition-all" 
+                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#16062B] text-white focus:ring-2 focus:ring-[#9B75C9] focus:border-transparent outline-none transition-all" 
                         placeholder="john@company.com" 
                       />
                     </div>
@@ -149,7 +149,7 @@ export default function Contact() {
                         required
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0b0f19] text-white focus:ring-2 focus:ring-[#6b84ec] focus:border-transparent outline-none transition-all" 
+                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#16062B] text-white focus:ring-2 focus:ring-[#9B75C9] focus:border-transparent outline-none transition-all" 
                         placeholder="+1 234 567 890" 
                       />
                     </div>
@@ -161,7 +161,7 @@ export default function Contact() {
                         name="company" 
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0b0f19] text-white focus:ring-2 focus:ring-[#6b84ec] focus:border-transparent outline-none transition-all" 
+                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#16062B] text-white focus:ring-2 focus:ring-[#9B75C9] focus:border-transparent outline-none transition-all" 
                         placeholder="Your Company" 
                       />
                     </div>
@@ -175,7 +175,7 @@ export default function Contact() {
                       required
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0b0f19] text-white focus:ring-2 focus:ring-[#6b84ec] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#16062B] text-white focus:ring-2 focus:ring-[#9B75C9] focus:border-transparent outline-none transition-all"
                     >
                       <option value="ERP">ERP Solutions</option>
                       <option value="LMS">LMS Platform</option>
@@ -195,14 +195,14 @@ export default function Contact() {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0b0f19] text-white focus:ring-2 focus:ring-[#6b84ec] focus:border-transparent outline-none transition-all resize-none" 
+                      className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#16062B] text-white focus:ring-2 focus:ring-[#9B75C9] focus:border-transparent outline-none transition-all resize-none" 
                       placeholder="How can we help you?"
                     ></textarea>
                   </div>
 
                   <button 
                     type="submit" 
-                    className="w-full bg-[#6b84ec] hover:bg-[#79c7fd] hover:text-[#0b0f19] text-white font-bold py-4 px-8 rounded-xl transition-colors shadow-lg flex items-center justify-center"
+                    className="w-full bg-gradient-light-purple hover:opacity-90 text-white font-bold py-4 px-8 rounded-xl transition-colors shadow-purple-glow flex items-center justify-center"
                   >
                     Send Message
                     <Send size={18} className="ml-2" />

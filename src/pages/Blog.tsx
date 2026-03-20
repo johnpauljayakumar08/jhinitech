@@ -61,9 +61,9 @@ export default function Blog() {
   ];
 
   return (
-    <div className="bg-[#0b0f19] text-gray-300">
+    <div className="bg-[#16062B] text-gray-300">
       {/* Hero Banner */}
-      <section className="bg-gradient-to-r from-[#6b84ec] to-[#79c7fd] text-white py-24">
+      <section className="bg-gradient-dark-purple text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -84,11 +84,11 @@ export default function Blog() {
       </section>
 
       {/* Blog Grid */}
-      <section className="py-24 bg-[#0b0f19]">
+      <section className="py-24 bg-[#16062B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {blogs.map((blog) => (
-              <div key={blog.id} className="bg-[#131b2f] rounded-2xl border border-white/5 overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+              <div key={blog.id} className="bg-[#320E5E]/40 rounded-2xl border border-white/5 overflow-hidden shadow-sm hover:shadow-xl transition-all group">
                 <div className="relative h-64 overflow-hidden">
                   <img 
                     src={blog.image} 
@@ -96,7 +96,7 @@ export default function Blog() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute top-4 left-4 bg-[#6b84ec] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                  <div className="absolute top-4 left-4 bg-gradient-light-purple text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-purple-glow">
                     {blog.category}
                   </div>
                 </div>
@@ -105,13 +105,13 @@ export default function Blog() {
                     <span className="flex items-center"><Calendar size={14} className="mr-1" /> {blog.date}</span>
                     <span className="flex items-center"><User size={14} className="mr-1" /> {blog.author}</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#6b84ec] transition-colors line-clamp-2">
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#9B75C9] transition-colors line-clamp-2">
                     {blog.title}
                   </h3>
                   <p className="text-gray-400 mb-6 line-clamp-3">
                     {blog.excerpt}
                   </p>
-                  <Link to="#" className="inline-flex items-center text-[#79c7fd] font-semibold hover:text-[#6b84ec] transition-colors">
+                  <Link to="#" className="inline-flex items-center text-[#CBB6E6] font-semibold hover:text-[#9B75C9] transition-colors">
                     Read More <ArrowRight size={16} className="ml-2" />
                   </Link>
                 </div>
@@ -122,11 +122,11 @@ export default function Blog() {
           {/* Pagination (Static) */}
           <div className="mt-16 flex justify-center">
             <nav className="flex items-center space-x-2">
-              <button className="px-4 py-2 border border-white/10 rounded-lg text-gray-400 hover:bg-[#0b0f19] disabled:opacity-50" disabled>Previous</button>
-              <button className="px-4 py-2 bg-[#6b84ec] text-white rounded-lg font-medium">1</button>
-              <button className="px-4 py-2 border border-white/10 rounded-lg text-gray-300 hover:bg-[#0b0f19] font-medium">2</button>
-              <button className="px-4 py-2 border border-white/10 rounded-lg text-gray-300 hover:bg-[#0b0f19] font-medium">3</button>
-              <button className="px-4 py-2 border border-white/10 rounded-lg text-gray-300 hover:bg-[#0b0f19]">Next</button>
+              <button className="px-4 py-2 border border-white/10 rounded-lg text-gray-400 hover:bg-[#16062B] disabled:opacity-50" disabled>Previous</button>
+              <button className="px-4 py-2 bg-gradient-light-purple text-white rounded-lg font-medium shadow-purple-glow">1</button>
+              <button className="px-4 py-2 border border-white/10 rounded-lg text-gray-300 hover:bg-[#16062B] font-medium">2</button>
+              <button className="px-4 py-2 border border-white/10 rounded-lg text-gray-300 hover:bg-[#16062B] font-medium">3</button>
+              <button className="px-4 py-2 border border-white/10 rounded-lg text-gray-300 hover:bg-[#16062B]">Next</button>
             </nav>
           </div>
         </div>

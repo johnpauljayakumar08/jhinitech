@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 export default function ERP() {
   return (
-    <div className="bg-[#0b0f19] text-gray-300">
+    <div className="bg-[#16062B] text-gray-300">
       {/* Hero Banner */}
-      <section className="bg-gradient-to-r from-[#6b84ec] to-[#79c7fd] text-white py-24">
+      <section className="bg-gradient-dark-purple text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export default function ERP() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-full bg-[#131b2f] text-[#6b84ec] hover:bg-[#0b0f19] transition-all shadow-xl hover:-translate-y-1">
+            <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-full bg-[#320E5E]/40 text-[#9B75C9] hover:bg-[#16062B] transition-all shadow-xl hover:-translate-y-1">
               Get Free Demo Login
               <ArrowRight className="ml-2" size={20} />
             </Link>
@@ -37,7 +37,7 @@ export default function ERP() {
       </section>
 
       {/* Intro */}
-      <section className="py-20 bg-[#070a12]">
+      <section className="py-20 bg-[#110422]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xl text-gray-400 leading-relaxed">
             Our ERP is built to adapt to any industry, ensuring flexibility, scalability, and complete control over your business processes. With our next-generation ERP system, businesses can eliminate manual work, improve efficiency, and make data-driven decisions for sustainable growth.
@@ -46,18 +46,18 @@ export default function ERP() {
       </section>
 
       {/* Core ERP Modules */}
-      <section className="py-24 bg-[#0b0f19]">
+      <section className="py-24 bg-[#16062B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Core ERP Modules</h2>
-            <div className="w-24 h-1 bg-[#6b84ec] mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-light-purple mx-auto rounded-full"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
             
             {/* Finance & Accounting */}
-            <div className="bg-[#131b2f] p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#79c7fd]/30 transition-colors hover:shadow-xl transition-all">
-              <BarChart className="text-[#6b84ec] w-10 h-10 mb-6" />
+            <div className="bg-[#320E5E]/40 p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#CBB6E6]/30 transition-colors hover:shadow-xl transition-all">
+              <BarChart className="text-[#9B75C9] w-10 h-10 mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Finance & Accounting</h3>
               <p className="text-gray-400 mb-6 text-sm">Complete financial visibility and control in one system.</p>
               <ul className="space-y-2 text-gray-400 text-sm">
@@ -71,8 +71,8 @@ export default function ERP() {
             </div>
 
             {/* Manufacturing */}
-            <div className="bg-[#131b2f] p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#79c7fd]/30 transition-colors hover:shadow-xl transition-all">
-              <Settings className="text-[#6b84ec] w-10 h-10 mb-6" />
+            <div className="bg-[#320E5E]/40 p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#CBB6E6]/30 transition-colors hover:shadow-xl transition-all">
+              <Settings className="text-[#9B75C9] w-10 h-10 mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Manufacturing</h3>
               <p className="text-gray-400 mb-6 text-sm">Optimize production efficiency and reduce operational costs.</p>
               <ul className="space-y-2 text-gray-400 text-sm">
@@ -86,8 +86,8 @@ export default function ERP() {
             </div>
 
             {/* Sales & CRM */}
-            <div className="bg-[#131b2f] p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#79c7fd]/30 transition-colors hover:shadow-xl transition-all">
-              <Users className="text-[#6b84ec] w-10 h-10 mb-6" />
+            <div className="bg-[#320E5E]/40 p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#CBB6E6]/30 transition-colors hover:shadow-xl transition-all">
+              <Users className="text-[#9B75C9] w-10 h-10 mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Sales & CRM</h3>
               <p className="text-gray-400 mb-6 text-sm">Improve customer relationships and increase sales efficiency.</p>
               <ul className="space-y-2 text-gray-400 text-sm">
@@ -101,8 +101,8 @@ export default function ERP() {
             </div>
 
             {/* Inventory */}
-            <div className="bg-[#131b2f] p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#79c7fd]/30 transition-colors hover:shadow-xl transition-all">
-              <Database className="text-[#6b84ec] w-10 h-10 mb-6" />
+            <div className="bg-[#320E5E]/40 p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#CBB6E6]/30 transition-colors hover:shadow-xl transition-all">
+              <Database className="text-[#9B75C9] w-10 h-10 mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Inventory (Stock Management)</h3>
               <p className="text-gray-400 mb-6 text-sm">Maintain accurate stock flow and avoid shortages or overstocking.</p>
               <ul className="space-y-2 text-gray-400 text-sm">
@@ -116,8 +116,8 @@ export default function ERP() {
             </div>
 
             {/* Procurement */}
-            <div className="bg-[#131b2f] p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#79c7fd]/30 transition-colors hover:shadow-xl transition-all">
-              <ShoppingCart className="text-[#6b84ec] w-10 h-10 mb-6" />
+            <div className="bg-[#320E5E]/40 p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#CBB6E6]/30 transition-colors hover:shadow-xl transition-all">
+              <ShoppingCart className="text-[#9B75C9] w-10 h-10 mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Procurement</h3>
               <p className="text-gray-400 mb-6 text-sm">Streamline procurement and vendor management.</p>
               <ul className="space-y-2 text-gray-400 text-sm">
@@ -131,8 +131,8 @@ export default function ERP() {
             </div>
 
             {/* Project Management & HR */}
-            <div className="bg-[#131b2f] p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#79c7fd]/30 transition-colors hover:shadow-xl transition-all">
-              <Calendar className="text-[#6b84ec] w-10 h-10 mb-6" />
+            <div className="bg-[#320E5E]/40 p-8 rounded-2xl shadow-sm border border-white/5 hover:border-[#CBB6E6]/30 transition-colors hover:shadow-xl transition-all">
+              <Calendar className="text-[#9B75C9] w-10 h-10 mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Project Management & HR</h3>
               <p className="text-gray-400 mb-6 text-sm">Ensure projects are delivered on time and simplify HR operations.</p>
               <ul className="space-y-2 text-gray-400 text-sm">
@@ -156,7 +156,7 @@ export default function ERP() {
                 'Healthcare and Pharmaceuticals', 'Construction and Real Estate', 'Information Technology',
                 'Printing and Media', 'Education', 'Manufacturing', 'Retail and FMCG', 'Textile'
               ].map((vertical, idx) => (
-                <div key={idx} className="bg-[#131b2f] p-4 rounded-xl border border-white/5 shadow-sm flex items-center justify-center min-h-[100px]">
+                <div key={idx} className="bg-[#320E5E]/40 p-4 rounded-xl border border-white/5 shadow-sm flex items-center justify-center min-h-[100px]">
                   <span className="font-semibold text-gray-300 text-sm">{vertical}</span>
                 </div>
               ))}
@@ -165,56 +165,56 @@ export default function ERP() {
 
           {/* Key Features & Benefits */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
-            <div className="bg-[#131b2f] p-10 rounded-3xl shadow-lg border border-white/5">
+            <div className="bg-[#320E5E]/40 p-10 rounded-3xl shadow-lg border border-white/5">
               <h3 className="text-3xl font-bold text-white mb-8">Advanced Features</h3>
               <ul className="space-y-4">
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Mobile-friendly system</li>
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Multi-currency support</li>
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Document management</li>
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Role-based access control</li>
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Field-level customization</li>
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Email and SMS integration</li>
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Payment gateway integration</li>
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Customer and vendor portals</li>
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Workflow approvals</li>
-                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#79c7fd] mr-3 w-5 h-5" /> Customizable reports and dashboards</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Mobile-friendly system</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Multi-currency support</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Document management</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Role-based access control</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Field-level customization</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Email and SMS integration</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Payment gateway integration</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Customer and vendor portals</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Workflow approvals</li>
+                <li className="flex items-center text-gray-300"><CheckCircle className="text-[#CBB6E6] mr-3 w-5 h-5" /> Customizable reports and dashboards</li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-[#131b2f] to-[#070a12] p-10 rounded-3xl shadow-lg text-white border border-white/10">
-              <h3 className="text-3xl font-bold mb-8 text-[#79c7fd]">Business Benefits</h3>
+            <div className="bg-gradient-dark-purple p-10 rounded-3xl shadow-lg text-white border border-white/10">
+              <h3 className="text-3xl font-bold mb-8 text-[#CBB6E6]">Business Benefits</h3>
               <ul className="space-y-6">
-                <li className="flex items-center text-lg"><CheckCircle className="text-[#6b84ec] mr-4 w-6 h-6" /> Reduced operational costs and risks</li>
-                <li className="flex items-center text-lg"><CheckCircle className="text-[#6b84ec] mr-4 w-6 h-6" /> Improved financial management and cash flow</li>
-                <li className="flex items-center text-lg"><CheckCircle className="text-[#6b84ec] mr-4 w-6 h-6" /> Real-time insights into business performance</li>
-                <li className="flex items-center text-lg"><CheckCircle className="text-[#6b84ec] mr-4 w-6 h-6" /> Faster and smarter decision-making</li>
-                <li className="flex items-center text-lg"><CheckCircle className="text-[#6b84ec] mr-4 w-6 h-6" /> Increased productivity and efficiency</li>
-                <li className="flex items-center text-lg"><CheckCircle className="text-[#6b84ec] mr-4 w-6 h-6" /> Scalable system for business growth</li>
+                <li className="flex items-center text-lg"><CheckCircle className="text-[#9B75C9] mr-4 w-6 h-6" /> Reduced operational costs and risks</li>
+                <li className="flex items-center text-lg"><CheckCircle className="text-[#9B75C9] mr-4 w-6 h-6" /> Improved financial management and cash flow</li>
+                <li className="flex items-center text-lg"><CheckCircle className="text-[#9B75C9] mr-4 w-6 h-6" /> Real-time insights into business performance</li>
+                <li className="flex items-center text-lg"><CheckCircle className="text-[#9B75C9] mr-4 w-6 h-6" /> Faster and smarter decision-making</li>
+                <li className="flex items-center text-lg"><CheckCircle className="text-[#9B75C9] mr-4 w-6 h-6" /> Increased productivity and efficiency</li>
+                <li className="flex items-center text-lg"><CheckCircle className="text-[#9B75C9] mr-4 w-6 h-6" /> Scalable system for business growth</li>
               </ul>
             </div>
           </div>
 
           {/* Why Our ERP */}
-          <div className="bg-gradient-to-r from-[#131b2f] to-[#070a12] border border-white/10 rounded-3xl p-12 text-center">
+          <div className="bg-gradient-dark-purple border border-white/10 rounded-3xl p-12 text-center">
             <h2 className="text-3xl font-bold text-white mb-8">Why Our ERP?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-              <div className="bg-[#131b2f] p-6 rounded-2xl shadow-sm border border-white/5">
-                <h4 className="font-bold text-[#6b84ec] mb-2">100% Customization</h4>
+              <div className="bg-[#320E5E]/40 p-6 rounded-2xl shadow-sm border border-white/5">
+                <h4 className="font-bold text-[#9B75C9] mb-2">100% Customization</h4>
                 <p className="text-sm text-gray-400">Based on business needs</p>
               </div>
-              <div className="bg-[#131b2f] p-6 rounded-2xl shadow-sm border border-white/5">
-                <h4 className="font-bold text-[#6b84ec] mb-2">Unlimited Access</h4>
+              <div className="bg-[#320E5E]/40 p-6 rounded-2xl shadow-sm border border-white/5">
+                <h4 className="font-bold text-[#9B75C9] mb-2">Unlimited Access</h4>
                 <p className="text-sm text-gray-400">Unlimited user access</p>
               </div>
-              <div className="bg-[#131b2f] p-6 rounded-2xl shadow-sm border border-white/5">
-                <h4 className="font-bold text-[#6b84ec] mb-2">White-Label</h4>
+              <div className="bg-[#320E5E]/40 p-6 rounded-2xl shadow-sm border border-white/5">
+                <h4 className="font-bold text-[#9B75C9] mb-2">White-Label</h4>
                 <p className="text-sm text-gray-400">White-label ERP solutions</p>
               </div>
-              <div className="bg-[#131b2f] p-6 rounded-2xl shadow-sm border border-white/5">
-                <h4 className="font-bold text-[#6b84ec] mb-2">Seamless Integrations</h4>
+              <div className="bg-[#320E5E]/40 p-6 rounded-2xl shadow-sm border border-white/5">
+                <h4 className="font-bold text-[#9B75C9] mb-2">Seamless Integrations</h4>
                 <p className="text-sm text-gray-400">WhatsApp, Email, CRM, APIs</p>
               </div>
             </div>
-            <Link to="/contact" className="inline-block bg-[#6b84ec] text-white px-10 py-4 rounded-full font-bold hover:bg-[#79c7fd] hover:text-[#0b0f19] transition-colors shadow-lg">
+            <Link to="/contact" className="inline-block bg-gradient-light-purple hover:opacity-90 text-white px-10 py-4 rounded-full font-bold shadow-purple-glow transition-all">
               Streamline, Automate, and Scale Your Business
             </Link>
           </div>
