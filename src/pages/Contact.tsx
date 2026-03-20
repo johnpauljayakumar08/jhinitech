@@ -70,7 +70,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">Our Location</h3>
-                    <p className="text-gray-400">Global Operations Center<br />Tech Park, Innovation Drive<br />City, Country 12345</p>
+                    <p className="text-gray-400">Coimbatore, Tamil Nadu</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -79,7 +79,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">Phone Number</h3>
-                    <p className="text-gray-400">+1 234 567 890<br />+1 987 654 321</p>
+                    <p className="text-gray-400">+91 9994736580</p>
                   </div>
                 </div>
                 <div className="flex items-start">

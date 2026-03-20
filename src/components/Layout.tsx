@@ -2,6 +2,7 @@ import { Link, Outlet } from 'react-router-dom';
 import { Menu, X, MessageCircle, Phone } from 'lucide-react';
 import { useState } from 'react';
 
+import logo from '../assets/jhini.png';
 export default function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -14,7 +15,7 @@ export default function Layout() {
     { name: 'ERP', path: '/erp' },
     { name: 'LMS', path: '/lms' },
     { name: 'Training & Placement', path: '/training-placement' },
-    { name: 'Blog', path: '/blog' },
+    // { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -26,7 +27,7 @@ export default function Layout() {
           <div className="flex justify-between h-20 items-center">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="text-2xl font-bold text-[#9B75C9]">
-                Jhini<span className="text-[#CBB6E6]">Tech</span>
+                <img src={logo} alt="Jhini Tech Logo" className="h-15 w-auto mr-2" />
               </Link>
             </div>
             
@@ -126,8 +127,8 @@ export default function Layout() {
               <h3 className="text-lg font-semibold mb-6 text-[#CBB6E6]">Contact Info</h3>
               <ul className="space-y-3">
                 <li>Email: info@jhinitech.com</li>
-                <li>Phone: +1 234 567 890</li>
-                <li>Location: Global Operations</li>
+                <li>Phone: +91 9994736580</li>
+                <li>Location: Coimbatore Tamil Nadu</li>
               </ul>
             </div>
           </div>

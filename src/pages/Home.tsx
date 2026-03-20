@@ -24,7 +24,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl font-light mb-12 max-w-3xl mx-auto text-gray-400"
+            className="text-xl md:text-2xl font-light mb-12 max-w-3xl mx-auto text-white"
           >
             Customized Digital Solutions that Transform Your Business Operations, Drive Growth, and Build Scalable Success
           </motion.p>
@@ -33,7 +33,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-full bg-gradient-light-purple text-[#16062B] hover:opacity-90 transition-all shadow-purple-glow hover:-translate-y-1">
+            <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-full bg-gradient-light-purple text-black hover:opacity-90 transition-all shadow-purple-glow hover:-translate-y-1">
               Enquire Now
               <ArrowRight className="ml-2" size={20} />
             </Link>
@@ -69,7 +69,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-3xl font-bold text-white">100+</p>
-                    <p className="text-sm text-gray-400 font-medium uppercase tracking-wider">Satisfied Clients</p>
+                    <p className="text-sm text-white font-medium uppercase tracking-wider">Satisfied Clients</p>
                   </div>
                 </div>
               </div>
